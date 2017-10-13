@@ -1,0 +1,58 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: black;
+  background-image: url('../img/mainpic3.jpg');
+  background-size: cover;
+  color: #ffffff;
+}
+
+p {
+  font-color: #ffffff;
+}
+
+header {
+  padding: 20px 0;
+}
+
+
+
+header  #logo img {
+  padding-top: 5px;
+  width: 40px;
+}
+
+.col-md-4 .col-md-2 .col-md-6{
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+header nav {
+  padding-top: 10px;
+  align-content: center;
+}
+
+header #logout img {
+  padding-top: 5px;
+  width: 40px;
+}
+
+section {
+  background-color: black;
+}
+
+.jumbotron {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  height: 150px;
+  background-color: yellow;
+}
+
+.jumbotron ul li{
+  display: inline-block;
+  margin: 10px 20px;
+}
+
