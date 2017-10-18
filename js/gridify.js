@@ -1,6 +1,5 @@
-/**
- * Created by khanhnh on 13/09/2014.
- */
+//Image section
+
 
 'use strict';
 Element.prototype.imagesLoaded = function (cb){
@@ -90,4 +89,38 @@ Element.prototype.gridify = function (options)
             detachEvent(window, 'resize', render);
         })
     }
+}
+
+
+
+//Popup section
+
+$(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+
+
+//Drag and drop section
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
 }
