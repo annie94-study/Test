@@ -5,7 +5,6 @@
       <title>Image Previewer</title>
       <style>
         body{margin:0}
-
       </style>
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 			<link rel="stylesheet" type="text/css" href="../CSS/ImagePreviewerStyle.css"/>
@@ -27,7 +26,7 @@
             </div>
     			</div>
   		</header>
- 			<section class="jumbotron">
+ 			<section class="search">
     			<div class="container">
             <div class="col-sm-12">
               <div class="input-group">
@@ -48,28 +47,28 @@
     	    </div>
   		</section>
 
-      <section>
-
+      <section class="gallery">
         <div class="grid">
-          <a href="javascript:PopUpShow()"><img src="../img/add.png" width="250"></a>
-          <img src="http://st.houzz.com/simgs/7f618e340caf8d1c_15-1000/asian-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/63a18a8a008d4d2d_15-3579/traditional-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/bcf119ed013946de_15-1739/contemporary-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/af01732a0d23a798_15-6669/rustic-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/9351dd1300226ca7_15-5051/traditional-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/8511c53003205296_15-7228/beach-style-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/b151d63e02691dae_15-7522/farmhouse-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/17713aee00b8b8b7_15-7678/contemporary-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/9001c607024373e9_15-2696/traditional-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/93111938017af9bc_15-9856/contemporary-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/f3512a1300052564_15-4587/contemporary-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/52f1cab4020de25b_15-3918/mediterranean-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/7981aa8403c058e1_15-6222/mediterranean-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/0551552400b55756_15-5380/contemporary-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/5fa170b000f051c0_15-6732/farmhouse-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/3c3153270da524b2_15-9720/traditional-landscape.jpg" width="250">
-          <img src="http://st.houzz.com/simgs/d931c502035da8da_15-1082/contemporary-landscape.jpg" width="250">
+          <a href="javascript:PopUpShow()"><img src="../img/add.png"></a>
+          <img src="http://st.houzz.com/simgs/7f618e340caf8d1c_15-1000/asian-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/63a18a8a008d4d2d_15-3579/traditional-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/bcf119ed013946de_15-1739/contemporary-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/af01732a0d23a798_15-6669/rustic-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/9351dd1300226ca7_15-5051/traditional-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/8511c53003205296_15-7228/beach-style-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/b151d63e02691dae_15-7522/farmhouse-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/17713aee00b8b8b7_15-7678/contemporary-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/9001c607024373e9_15-2696/traditional-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/93111938017af9bc_15-9856/contemporary-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/f3512a1300052564_15-4587/contemporary-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/52f1cab4020de25b_15-3918/mediterranean-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/7981aa8403c058e1_15-6222/mediterranean-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/0551552400b55756_15-5380/contemporary-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/5fa170b000f051c0_15-6732/farmhouse-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/3c3153270da524b2_15-9720/traditional-landscape.jpg">
+          <img src="http://st.houzz.com/simgs/d931c502035da8da_15-1082/contemporary-landscape.jpg">
         </div>
+      </section>
 
         <div class="b-popup" id="popup1">
           <div class="b-popup-content">
@@ -78,8 +77,8 @@
               <div class="col-md-6" align="right"><a href="javascript:PopUpHide()">Back to page</a></div>
             </div>
             <div class="row">
-              <div class="col-md-6"><h4 style="color:grey;"><strong>ADD IMAGE</strong></h4></div>
-              <div class="col-md-6"><h4 style="color:grey;"><strong>ADD INFO</strong></h4></div>
+              <div class="col-md-6"><h4>ADD IMAGE</h4></div>
+              <div class="col-md-6"><h4>ADD INFO</h4></div>
             </div>
             <div class="row">
               <div class="col-md-6">
@@ -100,8 +99,12 @@
                     <br><input type="text" class="form">   
                   </div>
                   <div class="form-group">
-                    <label class="col-md-12 control-label">Add Tags</label>
-                    <br><input type="text" class="form" placeholder="Enter tags here"/>
+                    <label class="col-md-11 control-label">Add Tags</label>
+                    <br>
+                    <div class="col-md-12">
+                      <input id="ms1" style="width:250px;" type="text" class="form" name="ms1"/>
+                      <div style="clear:both;"></div>
+                    </div>
                   </div>
                   <div class="form-group">
                     <label class="col-md-12 control-label">Add Description</label>
@@ -128,7 +131,5 @@
           }
         </script>
 
-
-      </section>
 		</body>
 	</html>
